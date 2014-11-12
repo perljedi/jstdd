@@ -1,0 +1,30 @@
+{
+  "name": "jstdd",
+  "version": "0.0.0",
+  "description": "javascript tdd practice",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "javascript",
+    "tdd",
+    "karma"
+  ],
+  "author": "Dave",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "karma-jasmine": "~0.2.3",
+    "requirejs": "~2.1.15",
+    "karma-requirejs": "~0.2.2",
+    "karma": "~0.12.24",
+    "karma-phantomjs-launcher": "~0.1.4"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "requirejs": "~2.1.15"
+  }
+}
