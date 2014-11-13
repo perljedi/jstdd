@@ -16,5 +16,8 @@ define(["MatchCell"], function(MatchCell){
         it("knows its column", function(){
             expect(cell.getColumn()).toBe(column);
         });
+        it("knows its color", function(){
+            expect(cell.getColor()).toBe(color);
+        });
     });
 });

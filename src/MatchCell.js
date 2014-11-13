@@ -9,6 +9,9 @@ define(["lodash"], function(_){
         this.getColumn = function(){
             return column;
         };
+        this.getColor = function(){
+            return color;
+        };
     };
     return MatchCell;
 });

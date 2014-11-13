@@ -1,4 +1,5 @@
-define(["lodash"], function(_){
+define(["lodash", "MatchCell"], function(_, MatchCell){
+    var colors = _(["red", "green", "blue"]);
     var MatchBoard = function(rows, columns){
         this.rows = rows;
         this.columns = columns;
@@ -6,7 +7,7 @@ define(["lodash"], function(_){
         for(var c in _.range(0, columns)){
             var column = [];
             for(var r in _.range(0, rows)){
-                column.push({});
+                column.push(new MatchCell(r,c, colors.shuffle().first()));
             }
             board.push(column);
         }
